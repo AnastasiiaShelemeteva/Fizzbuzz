@@ -1,0 +1,15 @@
+
+5 input "amount of numbers: "; a 
+10 for x = 1 to a
+11 f=x/3: f2%=(f-int(f))*10
+12 b=x/5: b2%=(b-int(b))*10
+13 if f2%=0 and b2%=0 then 45
+14 if f2%=0 then 30
+15 if b2%=0 then 40
+17 goto 20
+20 print x:goto 50
+30 print "fizz":goto 50
+40 print "buzz":goto 50
+45 print "fizz buzz": goto 50
+50 next x
+
